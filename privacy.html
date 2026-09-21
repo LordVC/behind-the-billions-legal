@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Behind The Billions</title>
+
+<style>
+  :root{
+    --bg:#0b0b0d;
+    --surface:#151519;
+    --border:#2a2a30;
+    --text:#f0ece2;
+    --muted:#a19f9a;
+    --accent:#f4c76b;
+    --accent-ink:#1a1408;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --bg:#faf8f4;
+      --surface:#ffffff;
+      --border:#e7e2d8;
+      --text:#1c1a16;
+      --muted:#68655d;
+      --accent:#b8862f;
+      --accent-ink:#fff7e6;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#faf8f4;
+    --surface:#ffffff;
+    --border:#e7e2d8;
+    --text:#1c1a16;
+    --muted:#68655d;
+    --accent:#b8862f;
+    --accent-ink:#fff7e6;
+  }
+  :root[data-theme="dark"]{
+    --bg:#0b0b0d;
+    --surface:#151519;
+    --border:#2a2a30;
+    --text:#f0ece2;
+    --muted:#a19f9a;
+    --accent:#f4c76b;
+    --accent-ink:#1a1408;
+  }
+  @font-face{font-family:none}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    padding-inline:20px;
+    padding-block:48px;
+    display:flex;
+    justify-content:center;
+  }
+  main{max-width:680px;width:100%;}
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:700;
+    margin-bottom:14px;
+  }
+  .badge{
+    width:28px;height:28px;border-radius:50%;
+    background:var(--accent);color:var(--accent-ink);
+    display:flex;align-items:center;justify-content:center;
+    font-family:Georgia,serif;font-weight:700;font-size:13px;
+  }
+  h1{
+    font-family:Georgia,'Iowan Old Style',serif;
+    font-size:clamp(28px,5vw,38px);
+    line-height:1.15;
+    margin:0 0 6px;
+    text-wrap:balance;
+  }
+  .updated{color:var(--muted);font-size:14px;margin-bottom:40px;}
+  section{margin-bottom:34px;}
+  h2{
+    font-size:15px;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  p{line-height:1.7;font-size:16px;margin:0 0 12px;max-width:65ch;}
+  ul{margin:0 0 12px;padding-left:20px;line-height:1.7;font-size:16px;}
+  li{margin-bottom:6px;}
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:20px 22px;
+  }
+  a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;}
+  footer{
+    margin-top:48px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+    font-size:13px;
+  }
+</style>
+
+</head>
+<body>
+<main>
+  <div class="eyebrow"><span class="badge">BB</span> Behind The Billions</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: September 21, 2026</div>
+
+  <section>
+    <h2>What this is</h2>
+    <p>
+      "Behind The Billions" is an independent short-video channel (TikTok, YouTube Shorts) that
+      tells true stories about billionaires and public figures whose fortunes collapsed through
+      fraud or scandal. This privacy policy covers the internal publishing tool associated with
+      the channel's TikTok developer app, used solely to automate posting the channel's own
+      videos to its own TikTok account.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Who this app serves</h2>
+    <p>
+      This app is operated by a single individual creator for one purpose only: authenticating
+      and publishing content to the creator's own TikTok account (<strong>@behind.the.billio14</strong>).
+      It is not a public-facing product, does not have external end users, and does not offer
+      sign-in or any service to third parties.
+    </p>
+  </section>
+
+  <section>
+    <h2>Data we access</h2>
+    <p>Through TikTok's Login Kit and Content Posting API, this app accesses only:</p>
+    <ul>
+      <li>Basic TikTok profile information of the connected account (via <code>user.info.basic</code>) — used only to confirm the correct account is connected.</li>
+      <li>The ability to upload and publish video content to the connected account (via <code>video.upload</code> / <code>video.publish</code>).</li>
+    </ul>
+    <p>
+      No data from any other TikTok user or account is ever accessed, collected, or stored.
+      The app does not read, collect, or process viewer comments, follower lists, analytics
+      of other accounts, or any personal data belonging to third parties.
+    </p>
+  </section>
+
+  <section>
+    <h2>Data storage</h2>
+    <p>
+      OAuth access and refresh tokens for the single connected account are stored securely by
+      the creator and used only to authorize automated video publishing. Video files processed
+      by this tool are the channel's own original content. No personal data is sold, shared,
+      or transferred to any third party.
+    </p>
+  </section>
+
+  <section>
+    <h2>Your rights</h2>
+    <p>
+      The TikTok account owner may revoke this app's access at any time from TikTok's app
+      permissions settings. Doing so immediately stops all further access.
+    </p>
+  </section>
+
+  <footer>
+    Contact: <a href="mailto:volkancalisiyor@gmail.com">volkancalisiyor@gmail.com</a>
+  </footer>
+</main>
+
+</body>
+</html>
