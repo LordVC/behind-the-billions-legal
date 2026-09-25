@@ -3,21 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Behind The Billions — App</title>
-<style>
-  body{background:#0b0b0d;color:#f0ece2;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-       display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:20px;}
-  main{max-width:480px;text-align:center;}
-  h1{font-family:Georgia,serif;font-size:28px;margin-bottom:8px;}
-  p{color:#a19f9a;line-height:1.6;}
-  a{color:#f4c76b;}
-</style>
+<title>Behind The Billions — True stories of fortunes won and lost</title>
+<meta name="description" content="Behind The Billions is a short-form documentary channel about the rise and fall of the world's most infamous fortunes, and the publishing app that powers it.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="Behind The Billions">
+<meta property="og:image" content="assets/app-icon-512.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+
+<header class="nav">
+  <a class="brand" href="./"><img src="assets/icon-192.png" alt="Behind The Billions logo" width="36" height="36">Behind The Billions</a>
+  <nav>
+    <a href="#stories">Stories</a>
+    <a href="#app">The App</a>
+    <a href="#how">How it works</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
 <main>
-  <h1>Behind The Billions</h1>
-  <p>Internal TikTok publishing app for the "Behind The Billions" short-video channel.</p>
-  <p><a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Service</a></p>
+
+<section class="hero">
+  <img class="hero-logo" src="assets/app-icon-512.png" alt="Behind The Billions app icon" width="220" height="220">
+  <div>
+    <p class="eyebrow">Short-form business documentaries</p>
+    <h1>The true stories behind the world's biggest fortunes, and how they fell apart.</h1>
+    <p class="lead">Behind The Billions tells the rise and fall of billionaires, founders and financiers in under a minute: the scandals, the collapses, the prison sentences and the lessons hidden behind the headlines.</p>
+    <div class="cta">
+      <a class="btn" href="https://www.tiktok.com/@behind.the.billio14" target="_blank" rel="noopener">Watch on TikTok</a>
+      <a class="btn ghost" href="https://www.youtube.com/@BehindTheBillions05" target="_blank" rel="noopener">Watch on YouTube</a>
+    </div>
+  </div>
+</section>
+
+<section id="stories">
+  <h2>Stories we've covered</h2>
+  <p class="section-lead">A new episode every one to two days. Each one is researched from public court records, regulatory filings and reputable reporting.</p>
+  <div class="grid">
+    <article class="card"><span class="tag">Fraud</span><h3>Elizabeth Holmes</h3><p>Worth $4.5B at 30 and hailed as the next Steve Jobs. The blood-testing technology never worked.</p></article>
+    <article class="card"><span class="tag">Crypto</span><h3>Sam Bankman-Fried</h3><p>$26B on paper, then one leaked balance sheet and $6B in withdrawals in 72 hours. FTX was gone.</p></article>
+    <article class="card"><span class="tag">Wall Street</span><h3>Bernie Madoff</h3><p>A former NASDAQ chairman whose fund was the largest Ponzi scheme in history, around $65B.</p></article>
+    <article class="card"><span class="tag">Startups</span><h3>Adam Neumann</h3><p>WeWork was valued at $47B. Within weeks its value collapsed by 90%, yet its founder left with a fortune.</p></article>
+    <article class="card"><span class="tag">Fraud</span><h3>Charles Ponzi</h3><p>The man every scheme on this channel is named after: 50% returns in 90 days, $250,000 a day.</p></article>
+    <article class="card"><span class="tag">Crypto</span><h3>Do Kwon</h3><p>$40B vanished in 72 hours when the "stable" coin behind Terra and Luna went to zero.</p></article>
+    <article class="card"><span class="tag">Fintech</span><h3>Jan Marsalek</h3><p>€1.9B that never existed. Wirecard collapsed in days and its executive fled.</p></article>
+    <article class="card"><span class="tag">Media</span><h3>Conrad Black</h3><p>A British lord with a global newspaper empire, convicted over payments taken from his own company.</p></article>
+    <article class="card"><span class="tag">Sport</span><h3>Bernie Ecclestone</h3><p>Turned Formula 1 into a billion-dollar sport, then admitted hiding £400M from the tax authorities.</p></article>
+  </div>
+</section>
+
+<section id="app" class="split">
+  <div>
+    <h2>The Behind The Billions app</h2>
+    <p>Behind The Billions is produced by a single creator. The <strong>Behind The Billions app</strong> is the small publishing tool we built to deliver finished episodes to our own TikTok account without manual re-uploading.</p>
+    <p>It is a private, creator-operated tool. It is not offered to the public, it does not let anyone else sign up, and it only ever posts to the channel owner's own account (@behind.the.billio14), after the owner has authorized it with TikTok Login Kit.</p>
+    <h3>What it does</h3>
+    <ul class="checks">
+      <li>Signs in to the creator's TikTok account with TikTok Login Kit (OAuth 2.0).</li>
+      <li>Uploads a finished, rendered episode (MP4, vertical 9:16) with its caption and hashtags.</li>
+      <li>Publishes it with the Content Posting API, labeled as AI-generated content where applicable.</li>
+      <li>Checks the processing status of each post so the creator knows when it is live.</li>
+    </ul>
+  </div>
+  <aside class="panel">
+    <h3>TikTok permissions used</h3>
+    <dl>
+      <dt><code>user.info.basic</code></dt><dd>Shows which TikTok account is connected (display name and avatar) so the creator can confirm the right account.</dd>
+      <dt><code>video.upload</code></dt><dd>Sends a finished episode to the creator's TikTok inbox as a draft.</dd>
+      <dt><code>video.publish</code></dt><dd>Posts a finished episode directly to the creator's own profile.</dd>
+    </dl>
+    <p class="small">We never read other users' data, never post comments or messages, and never sell or share data. Details are in our <a href="privacy.html">Privacy Policy</a>.</p>
+  </aside>
+</section>
+
+<section id="how">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><span>1</span><h3>Research and script</h3><p>Each story is researched from public sources and written as a 45 to 60 second script with a clear hook and ending.</p></li>
+    <li><span>2</span><h3>Produce</h3><p>Visuals, narration and subtitles are produced and rendered into a vertical 1080×1920 or 720×1280 video.</p></li>
+    <li><span>3</span><h3>Connect TikTok</h3><p>The creator authorizes the app once with TikTok Login Kit. Tokens are stored privately on the creator's own machine.</p></li>
+    <li><span>4</span><h3>Review and publish</h3><p>The creator chooses the caption, privacy level and interaction settings, and the app posts the episode through the Content Posting API.</p></li>
+    <li><span>5</span><h3>Confirm</h3><p>The app polls TikTok's publish status and reports when the video is live or if TikTok rejected it.</p></li>
+  </ol>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Questions about the channel or the app, or a request to delete data: <a href="mailto:billionsbehindthe@gmail.com">billionsbehindthe@gmail.com</a></p>
+</section>
+
 </main>
+
+<footer class="foot">
+  <img src="assets/favicon-32.png" alt="" width="20" height="20">
+  <span>© 2026 Behind The Billions</span>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+</footer>
+
 </body>
 </html>
